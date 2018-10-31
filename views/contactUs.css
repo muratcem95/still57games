@@ -1,0 +1,13 @@
+.btn {
+    background-color: #ef3c40;
+    border-color: #ef3c40;
+    color: white;
+}
+.btn:hover {
+    background-color: darkred;
+    border-color: indianred;
+    color: white;
+}
+nav {
+    margin-bottom: 30px;
+}
