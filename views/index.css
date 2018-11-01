@@ -28,3 +28,15 @@ nav {
 .navbar-toggler {
     background-color: white !important;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 72px;
+    justify-items: center;
+}
+.grid-item {
+    text-align: center;
+    border: 2px lightgray solid;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
