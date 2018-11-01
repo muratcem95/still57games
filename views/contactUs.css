@@ -25,11 +25,14 @@ h5 {
     color: #ef3c40;
 }
 .nav-link {
-    color: white;
+    color: white !important;
 }
 .nav-link:hover {
     color: white;
 }
 .active {
     font-weight: bold;
+}
+.navbar-toggler {
+    background-color: white !important;
 }

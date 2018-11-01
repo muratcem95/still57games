@@ -17,11 +17,14 @@ nav {
     font-weight: bold;
 }
 .nav-link {
-    color: white;
+    color: white !important;
 }
 .nav-link:hover {
     color: white;
 }
 .active {
     font-weight: bold;
+}
+.navbar-toggler {
+    background-color: white !important;
 }
