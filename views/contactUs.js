@@ -7,6 +7,16 @@ socket.on('disconnect', function() {
     console.log('Disconnected from server.');
 });
 
+$("#submit").click(function() {
+    var email = $("#email").val();
+    var message = $("#message").val();
+    
+    if(email && message) {
+        $(".fade").addClass("modal");
+        window.setTimeout(function(){window.location.href = "../games";}, 3000);   
+    };
+}); 
+
 (function() {
   'use strict';
   window.addEventListener('load', function() {
@@ -23,4 +33,10 @@ socket.on('disconnect', function() {
       }, false);
     });
   }, false);
-})();
+})();               
+                    
+                    
+                             
+                             
+                             
+                             

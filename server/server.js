@@ -29,7 +29,7 @@ app.use(express.static(viewsPath));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
-app.get('/home', (req, res) => {
+app.get('/games', (req, res) => {
     res.render('index.html');
 });
 
@@ -52,8 +52,6 @@ app.post('/contactUsForm', (req, res) => {
             console.log('Email sent: ' + info.response);
         };
     });
-    
-    res.redirect('/home');
 });
 
 //IO CONNECTIONS

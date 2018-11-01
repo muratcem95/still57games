@@ -10,4 +10,19 @@
 }
 nav {
     margin-bottom: 30px;
+    background-color: #ef3c40;
+    color: white;
+}
+#brand {
+    color: white;
+    font-weight: bold;
+}
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    color: white;
+}
+.active {
+    font-weight: bold;
 }
