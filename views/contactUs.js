@@ -13,7 +13,7 @@ $("#submit").click(function() {
     
     if(email && message) {
         $(".fade").addClass("modal");
-        window.setTimeout(function(){window.location.href = "../games";}, 3000);   
+        setTimeout(function(){location.href="../games"} , 5000);   
     };
 }); 
 
