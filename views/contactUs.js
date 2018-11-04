@@ -31,7 +31,7 @@ $("#submit").click(function() {
     var message = $("#message").val();
     
     if(name && email && message) {
-        $("#alert_success").html('<div class="alert alert-primary text-center alert-dismissible fade show" role="alert"><h5>Thank you ' + name + ' for Contacting Us!</h5><span>We will get back to you as soon as possible. :)</span><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+        $("#alert_success").html('<div class="alert alert-primary text-center alert-dismissible fade show" role="alert"><div id="space"></div><h5>Thank you <u>' + name + '</u> for Contacting Us!</h5><span>We will get back to you as soon as possible. :)</span><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
         
         name = $("#name").val("");
         email = $("#email").val("");
