@@ -41,7 +41,11 @@ h3 {
 }
 #space {
     background-color: #CCE5FF;
-    width: 35px;
-    height: 69px;
+    width: 37px;
+    height: 87px;
     float: left;
+}
+.alert {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
