@@ -26,52 +26,33 @@
         </nav>
 
         <div class="container">
-            <h3>Contact Us! :)</h3>
+            <h3>Contact Us :)</h3>
+            <div id="alert_success"></div>
             <form method="post" id="contact_us_form" action="contactUsForm" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    <div class="invalid-feedback">
+                        Please type your name.
+                    </div>
+                </div>
                 <div class="form-group">
                     <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required>
                     <div class="invalid-feedback">
                         Please type your email.
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="phone_model" class="form-control" id="phone_model" placeholder="Phone Model">
-                        </div>
-                    </div>  
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="software_version" class="form-control" id="software_version" placeholder="Software Version">
-                        </div>
-                    </div>
-                </div>  
                 <div class="form-group">
                     <textarea class="form-control" name="message" id="message" rows="3" placeholder="Your Message" required></textarea>
+                    <small class="form-text text-muted">
+                        Please make sure to include your phone model and the software version if it is relevant.
+                    </small>
                     <div class="invalid-feedback">
                         Please type your message to share.
                     </div>
                 </div>
-                <button type="submit" href="#" id="submit" class="btn btn-sm" data-toggle="modal" data-target=".modal">Submit</button>
+                <button type="submit" id="submit" class="btn btn-sm">Submit</button>
             </form>  
         </div> 
-        
-        <!-- Modal -->
-<div class="fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Thank you for Contacting Us! :)</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        In the mean time, you can continue to look at our beautiful games.
-      </div>
-    </div>
-  </div>
-</div>
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

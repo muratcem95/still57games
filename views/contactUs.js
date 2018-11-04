@@ -8,12 +8,13 @@ socket.on('disconnect', function() {
 });
 
 $("#submit").click(function() {
+    var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
     
-    if(email && message) {
-        $(".fade").addClass("modal");
-        setTimeout(function(){location.href="../contactUs"} , 5000);   
+    if(name && email && message) {
+        $("#alert_success").html('<div class="alert alert-primary text-center" role="alert"><h5>Thank you for Contacting Us!</h5><span>We will get back to you as soon as possible. :)</span></div>');
+        setTimeout(function(){location.href="../contactUs"}, 5000);   
     };
 }); 
 

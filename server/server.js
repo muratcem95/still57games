@@ -42,7 +42,7 @@ app.post('/contactUsForm', (req, res) => {
         from: 'muratcem95@gmail.com',
         to: 'still57games@gmail.com',
         subject: `Still57 Games: ${req.body.email}`,
-        text: `Phone Model: ${req.body.phone_model}, Software Version: ${req.body.software_version}, Message: ${req.body.message}`
+        text: `Name: ${req.body.name}, Message: ${req.body.message}`
     };
     
     transporter.sendMail(mailOptions, (error, info) => {
