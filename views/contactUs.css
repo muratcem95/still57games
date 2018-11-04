@@ -32,3 +32,9 @@ h3 {
 .navbar-toggler {
     background-color: white !important;
 }
+.hide {
+    display: none !important;
+}
+.grey {
+    border-color: lightgray !important;
+}

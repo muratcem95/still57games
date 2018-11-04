@@ -7,17 +7,6 @@ socket.on('disconnect', function() {
     console.log('Disconnected from server.');
 });
 
-$("#submit").click(function() {
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var message = $("#message").val();
-    
-    if(name && email && message) {
-        $("#alert_success").html('<div class="alert alert-primary text-center" role="alert"><h5>Thank you for Contacting Us!</h5><span>We will get back to you as soon as possible. :)</span></div>');
-        setTimeout(function(){location.href="../contactUs"}, 5000);   
-    };
-}); 
-
 (function() {
   'use strict';
   window.addEventListener('load', function() {
@@ -34,7 +23,31 @@ $("#submit").click(function() {
       }, false);
     });
   }, false);
-})();               
+})();       
+
+$("#submit").click(function() {
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+    
+    if(name && email && message) {
+        $("#alert_success").html('<div class="alert alert-primary text-center alert-dismissible fade show" role="alert"><h5>Thank you ' + name + ' for Contacting Us!</h5><span>We will get back to you as soon as possible. :)</span><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+        
+        name = $("#name").val("");
+        email = $("#email").val("");
+        message = $("#message").val("");
+        
+        $(".form-control").addClass("grey");
+        
+        $(".invalid-feedback").addClass("hide");
+    } else {
+        $("#alert_success").html('');
+        
+        $(".form-control").removeClass("grey");
+        
+        $(".invalid-feedback").removeClass("hide");
+    };
+}); 
                     
                     
                              
