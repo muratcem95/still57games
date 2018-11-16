@@ -29,22 +29,22 @@ $("#submit").click(function() {
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
-//    var recap = $("#recap").val();
+    var recap = $("#recap").val();
     
-//    if(!recap) {
-//        var response = grecaptcha.getResponse();
-//        if(response.length == 0) {
-//            document.getElementById('g-recaptcha-error').innerHTML = '<div>This field is required.</div>';
-//        return false;
-//        };
-//    };
+    if(!recap) {
+        var response = grecaptcha.getResponse();
+        if(response.length == 0) {
+            document.getElementById('g-recaptcha-error').innerHTML = '<div>This field is required.</div>';
+        return false;
+        };
+    };
     
     if(name && email && message) {
         $("#alert_success").html('<div class="alert alert-primary text-center alert-dismissible fade show" role="alert"><div id="space"></div><h5>Thank you <u>' + name + '</u> for Contacting Us!</h5><span>We will get back to you as soon as possible. :)</span><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
 
-        name = $("#name").val("");
-        email = $("#email").val("");
-        message = $("#message").val("");
+//        name = $("#name").val("");
+//        email = $("#email").val("");
+//        message = $("#message").val("");
 
         $(".form-control").addClass("grey");
         $(".invalid-feedback").addClass("hide");
@@ -55,9 +55,9 @@ $("#submit").click(function() {
     };
 }); 
 
-//function verifyCaptcha() {
-//    document.getElementById('g-recaptcha-error').innerHTML = '';
-//};
+function verifyCaptcha() {
+    document.getElementById('g-recaptcha-error').innerHTML = '';
+};
 
  
                     
