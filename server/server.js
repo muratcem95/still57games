@@ -21,7 +21,7 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-app.set('views', path.join(__dirname,'../views'));  
+app.set('views', viewsPath);  
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
 
@@ -40,7 +40,7 @@ app.get('/contactUs', (req, res) => {
 app.post('/contactUsForm', (req, res) => {
     var mailOptions = {
         from: 'muratcem95@gmail.com',
-        to: 'still57games@gmail.com',
+        to: 'muratcem95@gmail.com',
         subject: `Still57 Games: ${req.body.email}`,
         text: `Name: ${req.body.name}, Message: ${req.body.message}`
     };
