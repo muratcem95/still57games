@@ -49,3 +49,8 @@ h3 {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+#g-recaptcha-error {
+    margin-bottom: 13px;
+    color:#DF4554;
+    font-size: 13px;
+}
